@@ -42,7 +42,7 @@ def geocode_address(address: str) -> tuple[float, float] | None:
     return None
 
 
-def geocode_employees(employees: list[dict]) -> list[dict]:
+# def geocode_employees(employees: list[dict]) -> list[dict]:
     """
     Adds 'lat' and 'lng' fields to each employee dict.
     Skips employees where geocoding fails (flags them with geocoded=False).
@@ -63,4 +63,33 @@ def geocode_employees(employees: list[dict]) -> list[dict]:
         print(f"  [{i+1}/{len(employees)}] {emp['name']} ({emp['area']}) -> {coords}")
 
     print(f"[geocoder] Done. Success: {success}, Failed: {failed}")
+    return employees
+
+def geocode_employees(employees: list[dict]) -> list[dict]:
+    """
+    Adds 'lat' and 'lng' fields to each employee dict.
+    Skips employees that already have lat/lng (pre-geocoded Excel).
+    """
+    pre_geocoded = [e for e in employees if e.get("lat") and e.get("lng")]
+    to_geocode   = [e for e in employees if not (e.get("lat") and e.get("lng"))]
+
+    print(f"[geocoder] {len(pre_geocoded)} already geocoded, {len(to_geocode)} need geocoding...")
+
+    # Mark pre-geocoded ones
+    for emp in pre_geocoded:
+        emp["lat"]      = float(emp["lat"])
+        emp["lng"]      = float(emp["lng"])
+        emp["geocoded"] = True
+
+    # Geocode the rest
+    for i, emp in enumerate(to_geocode):
+        coords = geocode_address(emp["address"])
+        if coords:
+            emp["lat"], emp["lng"] = coords
+            emp["geocoded"] = True
+        else:
+            emp["lat"] = emp["lng"] = None
+            emp["geocoded"] = False
+        print(f"  [{i+1}/{len(to_geocode)}] {emp['name']} -> {coords}")
+
     return employees
