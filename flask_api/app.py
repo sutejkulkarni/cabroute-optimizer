@@ -96,7 +96,7 @@ def optimize():
         employees = geocode_employees(employees)
 
         geocoded_count = sum(1 for e in employees if e.get("geocoded"))
-        if geocoded_count < 2:
+        if geocoded_count < 1:
             return jsonify({
                 "success": False,
                 "error": "Geocoding failed for almost all employees. Check that addresses include locality and city (e.g. 'Koramangala, Bangalore')."
