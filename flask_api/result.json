@@ -1,0 +1,475 @@
+{
+  "summary": {
+    "total_cabs": 4,
+    "total_employees_routed": 22,
+    "total_employees_skipped": 28,
+    "total_km_daily": 215.82,
+    "total_daily_cost_rs": 3884.76,
+    "total_monthly_cost_rs": 101003.76,
+    "working_days": 26,
+    "by_shift": {
+      "09:00": {
+        "cabs": 2,
+        "employees": 12,
+        "daily_cost": 1642.32
+      },
+      "08:00": {
+        "cabs": 1,
+        "employees": 5,
+        "daily_cost": 1164.96
+      },
+      "10:00": {
+        "cabs": 1,
+        "employees": 5,
+        "daily_cost": 1077.48
+      }
+    }
+  },
+  "routes": [
+    {
+      "ordered_employees": [
+        {
+          "employee_id": "EMP033",
+          "name": "Naveen Shetty",
+          "address": "10, 11th Cross, Jayanagar 3rd Block, Bangalore - 560011",
+          "area": "Jayanagar",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9740389325",
+          "lat": 12.9318155,
+          "lng": 77.5852384,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP036",
+          "name": "Sanjay Venkatesh",
+          "address": "58, South End Rd, Jayanagar, Bangalore - 560011",
+          "area": "Jayanagar",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9906248900",
+          "lat": 12.9171034,
+          "lng": 77.586878,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP044",
+          "name": "Amit Naidu",
+          "address": "16, 4th Stage, Banashankari, Bangalore - 560085",
+          "area": "Banashankari",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9489747629",
+          "lat": 12.8733717,
+          "lng": 77.5139352,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP039",
+          "name": "Bhavna Krishnamurthy",
+          "address": "75, Chord Rd, Rajajinagar, Bangalore - 560010",
+          "area": "Rajajinagar",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9918150683",
+          "lat": 12.9877722,
+          "lng": 77.5500294,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP041",
+          "name": "Shivanand Rajan",
+          "address": "20, 15th Cross, Malleswaram, Bangalore - 560003",
+          "area": "Malleswaram",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9313579170",
+          "lat": 13.0059313,
+          "lng": 77.5685635,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP009",
+          "name": "Arjun Joshi",
+          "address": "56, CMH Rd, Indiranagar, Bangalore - 560038",
+          "area": "Indiranagar",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9398362082",
+          "lat": 12.9784378,
+          "lng": 77.6437558,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP011",
+          "name": "Pradeep Naidu",
+          "address": "9, Defence Colony, Indiranagar, Bangalore - 560038",
+          "area": "Indiranagar",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9485451171",
+          "lat": 12.976171,
+          "lng": 77.6435315,
+          "geocoded": true,
+          "cluster_id": 1
+        },
+        {
+          "employee_id": "EMP001",
+          "name": "Sanjay Kumar",
+          "address": "14, 5th Cross, Koramangala 4th Block, Bangalore - 560034",
+          "area": "Koramangala",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9896233790",
+          "lat": 12.9362215,
+          "lng": 77.6271068,
+          "geocoded": true,
+          "cluster_id": 1
+        }
+      ],
+      "waypoints": [
+        [
+          12.9318155,
+          77.5852384
+        ],
+        [
+          12.9171034,
+          77.586878
+        ],
+        [
+          12.8733717,
+          77.5139352
+        ],
+        [
+          12.9877722,
+          77.5500294
+        ],
+        [
+          13.0059313,
+          77.5685635
+        ],
+        [
+          12.9784378,
+          77.6437558
+        ],
+        [
+          12.976171,
+          77.6435315
+        ],
+        [
+          12.9362215,
+          77.6271068
+        ],
+        [
+          12.9352,
+          77.6245
+        ]
+      ],
+      "distance_m": 57762,
+      "distance_km": 57.76,
+      "solver": "ortools",
+      "cab_id": 1,
+      "shift_time": "09:00",
+      "employee_count": 8,
+      "daily_cost": 1039.68,
+      "monthly_cost": 27031.68
+    },
+    {
+      "ordered_employees": [
+        {
+          "employee_id": "EMP032",
+          "name": "Pooja Sharma",
+          "address": "70, Konappana Agrahara, Electronic City, Bangalore - 560100",
+          "area": "Electronic City",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9217734861",
+          "lat": 12.8528618,
+          "lng": 77.668169,
+          "geocoded": true,
+          "cluster_id": 0
+        },
+        {
+          "employee_id": "EMP030",
+          "name": "Arjun Subramanian",
+          "address": "54, Neeladri Rd, Electronic City, Bangalore - 560100",
+          "area": "Electronic City",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9528853029",
+          "lat": 12.8413805,
+          "lng": 77.6485632,
+          "geocoded": true,
+          "cluster_id": 0
+        },
+        {
+          "employee_id": "EMP020",
+          "name": "Lakshmi Rajan",
+          "address": "5, 24th Main Rd, HSR Layout Sector 2, Bangalore - 560102",
+          "area": "HSR Layout",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9781802744",
+          "lat": 12.9078609,
+          "lng": 77.6491098,
+          "geocoded": true,
+          "cluster_id": 0
+        },
+        {
+          "employee_id": "EMP023",
+          "name": "Ajay Joshi",
+          "address": "66, Outer Ring Rd, HSR Layout, Bangalore - 560102",
+          "area": "HSR Layout",
+          "shift_time": "09:00",
+          "shift_type": "Morning",
+          "phone": "9924970419",
+          "lat": 12.91586,
+          "lng": 77.6382298,
+          "geocoded": true,
+          "cluster_id": 0
+        }
+      ],
+      "waypoints": [
+        [
+          12.8528618,
+          77.668169
+        ],
+        [
+          12.8413805,
+          77.6485632
+        ],
+        [
+          12.9078609,
+          77.6491098
+        ],
+        [
+          12.91586,
+          77.6382298
+        ],
+        [
+          12.9352,
+          77.6245
+        ]
+      ],
+      "distance_m": 33484,
+      "distance_km": 33.48,
+      "solver": "ortools",
+      "cab_id": 2,
+      "shift_time": "09:00",
+      "employee_count": 4,
+      "daily_cost": 602.64,
+      "monthly_cost": 15668.64
+    },
+    {
+      "ordered_employees": [
+        {
+          "employee_id": "EMP022",
+          "name": "Pradeep Iyer",
+          "address": "11, 22nd Cross, HSR Layout Sector 7, Bangalore - 560102",
+          "area": "HSR Layout",
+          "shift_time": "08:00",
+          "shift_type": "Early Morning",
+          "phone": "9787194506",
+          "lat": 12.9095392,
+          "lng": 77.6334482,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP019",
+          "name": "Vinay Iyer",
+          "address": "19, 27th Main Rd, HSR Layout Sector 1, Bangalore - 560102",
+          "area": "HSR Layout",
+          "shift_time": "08:00",
+          "shift_type": "Early Morning",
+          "phone": "9853573823",
+          "lat": 12.9156585,
+          "lng": 77.6517146,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP015",
+          "name": "Prasad Reddy",
+          "address": "73, Varthur Rd, Whitefield, Bangalore - 560066",
+          "area": "Whitefield",
+          "shift_time": "08:00",
+          "shift_type": "Early Morning",
+          "phone": "9149203558",
+          "lat": 12.9567691,
+          "lng": 77.7449015,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP050",
+          "name": "Asha Hegde",
+          "address": "25, Hebbal Kempapura, Hebbal, Bangalore - 560024",
+          "area": "Hebbal",
+          "shift_time": "08:00",
+          "shift_type": "Early Morning",
+          "phone": "9528414718",
+          "lat": 13.041662,
+          "lng": 77.5899438,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP002",
+          "name": "Sindhu Nair",
+          "address": "27, 80 Feet Rd, Koramangala 6th Block, Bangalore - 560095",
+          "area": "Koramangala",
+          "shift_time": "08:00",
+          "shift_type": "Early Morning",
+          "phone": "9249827706",
+          "lat": 12.9442321,
+          "lng": 77.6207414,
+          "geocoded": true
+        }
+      ],
+      "waypoints": [
+        [
+          12.9095392,
+          77.6334482
+        ],
+        [
+          12.9156585,
+          77.6517146
+        ],
+        [
+          12.9567691,
+          77.7449015
+        ],
+        [
+          13.041662,
+          77.5899438
+        ],
+        [
+          12.9442321,
+          77.6207414
+        ],
+        [
+          12.9352,
+          77.6245
+        ]
+      ],
+      "distance_m": 64718,
+      "distance_km": 64.72,
+      "solver": "ortools",
+      "cab_id": 3,
+      "shift_time": "08:00",
+      "employee_count": 5,
+      "daily_cost": 1164.96,
+      "monthly_cost": 30288.96
+    },
+    {
+      "ordered_employees": [
+        {
+          "employee_id": "EMP029",
+          "name": "Mahesh Iyer",
+          "address": "17, Electronic City Phase 2, Bangalore - 560100",
+          "area": "Electronic City",
+          "shift_time": "10:00",
+          "shift_type": "Morning",
+          "phone": "9902099969",
+          "lat": 12.8468545,
+          "lng": 77.6769267,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP028",
+          "name": "Kavya Nair",
+          "address": "33, Electronic City Phase 1, Bangalore - 560100",
+          "area": "Electronic City",
+          "shift_time": "10:00",
+          "shift_type": "Morning",
+          "phone": "9899925830",
+          "lat": 12.8496783,
+          "lng": 77.6649749,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP037",
+          "name": "Jyothi Naidu",
+          "address": "13, 8th Cross, Rajajinagar 1st Block, Bangalore - 560010",
+          "area": "Rajajinagar",
+          "shift_time": "10:00",
+          "shift_type": "Morning",
+          "phone": "9415143362",
+          "lat": 13.0047077,
+          "lng": 77.5495337,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP042",
+          "name": "Vani Patel",
+          "address": "63, Sampige Rd, Malleswaram, Bangalore - 560003",
+          "area": "Malleswaram",
+          "shift_time": "10:00",
+          "shift_type": "Morning",
+          "phone": "9679153816",
+          "lat": 13.0057041,
+          "lng": 77.5712064,
+          "geocoded": true
+        },
+        {
+          "employee_id": "EMP007",
+          "name": "Sudha Shetty",
+          "address": "34, 100 Feet Rd, Indiranagar, Bangalore - 560038",
+          "area": "Indiranagar",
+          "shift_time": "10:00",
+          "shift_type": "Morning",
+          "phone": "9336696312",
+          "lat": 12.9711357,
+          "lng": 77.6412844,
+          "geocoded": true
+        }
+      ],
+      "waypoints": [
+        [
+          12.8468545,
+          77.6769267
+        ],
+        [
+          12.8496783,
+          77.6649749
+        ],
+        [
+          13.0047077,
+          77.5495337
+        ],
+        [
+          13.0057041,
+          77.5712064
+        ],
+        [
+          12.9711357,
+          77.6412844
+        ],
+        [
+          12.9352,
+          77.6245
+        ]
+      ],
+      "distance_m": 59856,
+      "distance_km": 59.86,
+      "solver": "ortools",
+      "cab_id": 4,
+      "shift_time": "10:00",
+      "employee_count": 5,
+      "daily_cost": 1077.48,
+      "monthly_cost": 28014.48
+    }
+  ],
+  "config": {
+    "cab_capacity": 6,
+    "rate_per_km": 18.0,
+    "working_days": 26,
+    "office": {
+      "lat": 12.9352,
+      "lng": 77.6245
+    }
+  }
+}
